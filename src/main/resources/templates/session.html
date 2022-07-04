@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>동물 가족 with 세션</title>
+</head>
+<body>
+<div style="text-align: center; font-size: 24px;">
+    🐓
+    <th:block th:each="num : ${#numbers.sequence(0, chicks)}">
+        🐥
+    </th:block>
+    <form action="/" method="post">
+        <button type="submit">삐약삐약</button>
+    </form>
+</div>
+</body>
+</html>
