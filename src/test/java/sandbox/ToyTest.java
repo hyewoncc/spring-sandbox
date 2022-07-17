@@ -13,4 +13,11 @@ public class ToyTest {
         int i = 1;
         assertThat(i).isEqualTo(2);
     }
+
+    @DisplayName("통과하는 테스트")
+    @Test
+    void test_success() {
+        int j = 1;
+        assertThat(j).isEqualTo(1);
+    }
 }
