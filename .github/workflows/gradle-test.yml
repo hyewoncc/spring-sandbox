@@ -9,7 +9,7 @@ name: Gradle CI 테스트
 
 on:
   push:
-    branches: [ "actions-dev" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "actions-main" ]
 
