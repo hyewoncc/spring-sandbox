@@ -11,7 +11,7 @@ public class ToyController {
     }
 
     @GetMapping("/hello")
-    public ToyResponse sayHello() {
+    public void sayHello() {
         return new ToyResponse("hello");
     }
 }
