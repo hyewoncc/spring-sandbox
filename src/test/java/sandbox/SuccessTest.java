@@ -22,12 +22,4 @@ public class SuccessTest {
 
         assertThat(x).isEqualTo(2);
     }
-
-    @DisplayName("실패하는 테스트 1")
-    @Test
-    void test_fail_case_1() {
-        int x = 2;
-
-        assertThat(x).isEqualTo(1);
-    }
 }
