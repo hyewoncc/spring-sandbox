@@ -1,5 +1,5 @@
 src/main/resources/application.yml
-src/main/resources/configs/*
+src/main/resources/dog/*
 
 README.md
 .gradle

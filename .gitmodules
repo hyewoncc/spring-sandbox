@@ -1,0 +1,3 @@
+[submodule "src/main/resources/dog"]
+	path = src/main/resources/dog
+	url = https://github.com/hyewoncc/spring-sandbox-secret.git
