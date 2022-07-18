@@ -16,7 +16,7 @@ class SpringSandboxApplicationTests {
 	@DisplayName("성공하는 테스트")
 	@Test
 	void test_successCase () {
-		assertThat(2).isEqualTo(2);
+		assertThat(1).isEqualTo(1);
 	}
 
 }
