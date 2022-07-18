@@ -1,0 +1,4 @@
+[submodule "src/main/resources/configs"]
+	path = src/main/resources/configs
+	url = https://github.com/hyewoncc/spring-sandbox-secret.git
+	branch = main
