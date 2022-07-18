@@ -4,9 +4,9 @@ pipeline {
         chmod +x ./gradlew
     }
     stage('Build') {
-        sh ./gradlew bootJar
+        sh './gradlew build'
     }
     stage('Test') {
-        sh ./gradlew test
+        sh './gradlew test'
     }
 }
