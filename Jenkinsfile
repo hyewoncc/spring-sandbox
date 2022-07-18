@@ -1,20 +1,12 @@
 pipeline {
     agent any
-    stages {
-        stage('Permission') {
-            steps {
-                chmod +x ./gradlew
-            }
-        }
-        stage('Build') {
-            steps {
-                ./gradlew bootJar
-            }
-        }
-        stage('Test') {
-            steps {
-                ./gradlew test
-            }
-        }
+    stage('Permission') {
+        chmod +x './gradlew'
+    }
+    stage('Build') {
+        sh './gradlew bootJar'
+    }
+    stage('Test') {
+        sh './gradlew test'
     }
 }
