@@ -15,4 +15,5 @@ public class TokenResponse {
     public String getToken() {
         return token;
     }
+
 }
