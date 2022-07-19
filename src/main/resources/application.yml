@@ -1,4 +1,1 @@
-spring:
-  config:
-    import:
-      - classpath:/dog/application.yml
+
