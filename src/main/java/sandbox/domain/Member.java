@@ -19,6 +19,10 @@ public class Member {
     public Member() {
     }
 
+    public Member(final String name) {
+        this(null, name);
+    }
+
     public Member(final Long id, final String name) {
         this.id = id;
         this.name = name;

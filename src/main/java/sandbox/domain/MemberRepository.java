@@ -2,5 +2,7 @@ package sandbox.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public class MemberRepository implements JpaRepository<Member, Long> {
+public interface MemberRepository extends JpaRepository<Member, Long> {
+
+    boolean existsByName(String name);
 }
