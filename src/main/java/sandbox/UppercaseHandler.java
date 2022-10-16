@@ -5,15 +5,18 @@ import java.lang.reflect.Method;
 
 public class UppercaseHandler implements InvocationHandler {
 
-    private final Hello target;
+    private final Object target;
 
-    public UppercaseHandler(final Hello target) {
+    public UppercaseHandler(final Object target) {
         this.target = target;
     }
 
     @Override
     public Object invoke(final Object proxy, final Method method, final Object[] args) throws Throwable {
-        String result = (String) method.invoke(target, args);
-        return result.toUpperCase();
+        Object result = method.invoke(target, args);
+        if (result instanceof String && method.getName().startsWith("say")) {
+            return ((String) result).toUpperCase();
+        }
+        return result;
     }
 }

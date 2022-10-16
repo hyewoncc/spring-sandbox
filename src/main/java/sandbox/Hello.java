@@ -7,4 +7,6 @@ public interface Hello {
     String sayHi(String name);
 
     String sayThankyou(String name);
+
+    String repeat(String name);
 }

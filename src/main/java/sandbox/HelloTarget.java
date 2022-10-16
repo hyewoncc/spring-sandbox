@@ -16,4 +16,9 @@ public class HelloTarget implements Hello {
     public String sayThankyou(final String name) {
         return "Thank You " + name;
     }
+
+    @Override
+    public String repeat(final String name) {
+        return name;
+    }
 }

@@ -22,4 +22,9 @@ public class HelloUpperCase implements Hello {
     public String sayThankyou(final String name) {
         return hello.sayThankyou(name).toUpperCase();
     }
+
+    @Override
+    public String repeat(final String name) {
+        return name;
+    }
 }

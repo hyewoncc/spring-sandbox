@@ -37,5 +37,7 @@ class HelloTest {
         assertThat(hello.sayHello("cat")).isEqualTo("HELLO CAT");
         assertThat(hello.sayHi("dog")).isEqualTo("HI DOG");
         assertThat(hello.sayThankyou("bird")).isEqualTo("THANK YOU BIRD");
+
+        assertThat(hello.repeat("mouse")).isEqualTo("mouse");
     }
 }
